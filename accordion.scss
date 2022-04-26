@@ -1,3 +1,9 @@
+@use 'base';
+@use 'box';
+//$font-stack: Helvetica, sans-serif;
+//$hover-color: #ccc;
+ 
+
  /* Style the buttons that are used to open and close the accordion panel */
  .accordion {
     background-color: #eee;
@@ -9,11 +15,12 @@
     border: none;
     outline: none;
     transition: 0.4s;
+    font: base.$font-stack;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: base.$hover-color;
   }
   
   /* Style the accordion panel. Note: hidden by default */
@@ -31,5 +38,21 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+  }
+
+  .blueBox{
+      p{
+          background-color: rgb(58, 58, 153);
+          color: white;
+          padding: 100px;
+          border: 100px;
+      }
+  }
+
+  .testBox{
+      p{
+          background-color: box.$box-background;
+          color: box.$box-color;
+      }
   }
   

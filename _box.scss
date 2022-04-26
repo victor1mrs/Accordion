@@ -1,0 +1,9 @@
+$box-font: Helvetica;
+$box-color: rgb(30, 11, 114);
+$box-background: rgb(252, 181, 124);
+
+body {
+  font: 100% $box-font;
+  color: $box-color;
+  background-color: $box-background;
+}
